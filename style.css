@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --screenMode-light: white;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+
+  margin-top: -10rem;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 82.1rem;
+  height: 33.6rem;
+
+  
+}
+
+button.btn-temp{
+  padding: 1rem;
+  margin-top: 3rem;
+
+  border: none;
+  border-radius: 1.6rem;
+
+  background-color: #2b2b2a;
+  color: white;
+
+  font-size: 2rem;
+}
+
+button.btn-temp:hover{
+  transition: .4s;
+}
+
+button.btn-temp:hover{
+  transform: scale(0.9)
+}
+
+.sectionONe {
+  text-align: center;
+}
+
+.sectionONe span{
+  font-size: 12rem;
+  color: #323238;
+}
+
+.buttons{
+  display: flex;
+  justify-content:space-between;
+}
+
+.buttons svg:hover{
+  transition: .4s;
+}
+
+.buttons svg:hover{
+  transform: scale(0.9);
+}
+
+.buttons svg,
+.sectionTwo svg{
+  cursor: pointer;
+}
+
+.sectionTwo{
+  display: grid;
+  grid-template-areas: 
+  "forest rain"
+  "coffeShop fireplace";
+  gap: 3rem;
+}
+
+.sectionTwo img#forest{
+  grid-area: forest;
+}
+
+.sectionTwo img#rain{
+  grid-area: rain;
+}
+
+.sectionTwo img#coffeShop{
+  grid-area: coffeShop;
+}
+
+.sectionTwo img#fireplace{
+  grid-area: fireplace;
+}
+
+.sectionTwo svg{
+  background: #E1E1E6;
+  border-radius: 24px;
+
+  width: 10rem;
+  height: 12rem;
+
+  padding: 3rem;
+
+  transition: background 1s;
+}
+
+.sectionTwo svg:hover{
+  background: #02799D; 
+}
+
+.container-svg svg:hover path {
+  fill: #ffff;
+}
+
+img.sun,
+svg.moon{
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin: 5rem 6rem 0 0;
+
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+}
+
+section.sectionTwo div{
+  position: relative;
+}
+
+input[type="range"]{
+  appearance: none;
+
+  position: absolute;
+  bottom: 1.8rem;
+  left: 1.5rem;
+
+  width: 7rem;
+  height: 0.2rem;
+
+  background-color: #323238;
+
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  appearance: none;
+  background-color: #323238;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+div.dark svg path{
+  fill: white;
+}
+
+span.dark,
+minutes.dark,
+seconds.dark{
+  color: white;
+}
+
+input.bgDark[type="range"]{
+  appearance: none;
+
+  background-color: white;
+}
+
+input.bgDark[type="range"]::-webkit-slider-thumb{
+  appearance: none;
+
+  background-color: white;
+}
+
+section.sectionDark svg{
+  background: #02799D;
+
+  transition: background 1s;
+}
+
+section.sectionDark svg:hover{
+  background: #323238; 
+}
+
+section.sectionDark svg path {
+  fill: #ffff;
+}
