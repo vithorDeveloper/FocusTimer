@@ -21,6 +21,6 @@
 * JavaScript 
 ## Abrir Projeto
 
-[Pomodoro](https://formulario-chi-livid.vercel.app)
+[Focus Timer](https://focus-timer-azure.vercel.app)
 
 <p align="center">Done with 💜 by vithorDeveloper👋</p>
